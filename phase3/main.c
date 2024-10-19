@@ -37,7 +37,8 @@ int main()
             break;
 
         case 2:
-            ReadFromFile(students, n);
+            const char *filename = "student_data.csv";
+            ReadFromFile(filename, students, &n);
             display_gradecard(students, n);
             break;
         case 3:

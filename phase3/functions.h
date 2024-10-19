@@ -26,6 +26,9 @@ void total_marks(student *stu, int n);
 void SGPA(student *stu, int n);
 void display_gradecard(student *stu, int n);
 void WriteToFile(student *stu, int n);
-void ReadFromFile(student *stu, int n);
+void ReadFromFile(const char *filename, student *stu, int *n);
+void ReadFromFileCSV(student *stu, int n, const char *filename);
+void ReadFromFileJSON(student *stu, int *n, const char *filename);
+void ReadFromFileXML(student *stu, int *n, const char *filename);
 
 #endif
